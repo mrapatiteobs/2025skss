@@ -94,7 +94,12 @@
                 <td>Registration: Free</td>
             </tr>
         </table>
-        <a href="#" class="button">Join Now</a>
+   
+
+   <div>
+ <h2>Register Here</h2>
+        <iframe width="640px" height="480px" src="https://forms.office.com/r/AzTVEr1Dr8?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    </div>
     </div>
 </body>
 </html>
