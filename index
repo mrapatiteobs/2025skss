@@ -62,43 +62,64 @@
                 <th>Category</th>
                 <th>YIC (Young Innovators Challenge)</th>
                 <th>NGFP (Young Voices Awards)</th>
+                <th>New Column 1</th>
+                <th>New Column 2</th>
             </tr>
             <tr>
                 <td>Criteria</td>
                 <td>13-17 years old, 2-3 students/team</td>
                 <td>13-17 years old, 2-3 students/team</td>
+                <td>New criteria for YIC</td>
+                <td>New criteria for NGFP</td>
             </tr>
             <tr>
                 <td>Challenge</td>
                 <td>"Help a person, change the world" <br> Identify a real problem and give 1 solution</td>
                 <td>Create a positive change in your community <br> Focus on 1 SDG Goal</td>
+                <td>New challenge for YIC</td>
+                <td>New challenge for NGFP</td>
             </tr>
             <tr>
                 <td>Submission</td>
                 <td>Prototype with Arduino <br> Pitching slide</td>
                 <td>Short essay (400 words) <br> Video (2 min 30 sec)</td>
+                <td>New submission for YIC</td>
+                <td>New submission for NGFP</td>
             </tr>
             <tr>
                 <td>Due Date</td>
                 <td>31 July 2024 <br> Mentoring will be provided</td>
                 <td>30 June 2024 <br> Workshops will be provided</td>
+                <td>New due date for YIC</td>
+                <td>New due date for NGFP</td>
             </tr>
             <tr>
                 <td>Prize</td>
                 <td>Certificate <br> Chance to join state Maker Fair <br> Medals</td>
                 <td>Certificate <br> Cash prize for winners</td>
+                <td>New prize for YIC</td>
+                <td>New prize for NGFP</td>
             </tr>
             <tr>
                 <td>Cost</td>
                 <td>Registration: Free <br> Components for Prototype may cost RM30 per group</td>
                 <td>Registration: Free</td>
+                <td>New cost for YIC</td>
+                <td>New cost for NGFP</td>
+            </tr>
+            <tr>
+                <td><a href="https://younginnovators.my/">YIC Website</a></td>
+                <td><a href="https://nextgenforesight.org/fellowship/young-voices/">NGFP Website</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
    
 
    <div>
  <h2>Register Here</h2>
-        <iframe width="640px" height="480px" src="https://forms.office.com/r/AzTVEr1Dr8?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        <iframe width="640px" height="480px" src="https://forms.office.com/r/AzTVEr1Dr8?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100%">
     </div>
     </div>
 </body>
