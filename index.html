@@ -6,9 +6,9 @@
     <title>Makerspace Club 2025</title>
     <style>
         body {
-            background-color: black;
-            color: yellow;
-            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #4e4e4e;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -21,35 +21,84 @@
         }
         h1 {
             font-size: 2.5em;
-            text-shadow: 3px 3px 5px yellow;
+            color: #d7263d;
+        }
+        h2 {
+            font-size: 2em;
+            color: #f46036;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         th, td {
-            border: 1px solid yellow;
-            padding: 10px;
+            border: 1px solid #ddd;
+            padding: 15px;
             text-align: left;
+            font-size: 1em;
         }
         th {
-            background-color: #222;
+            background-color: #f7b32b;
+            color: #ffffff;
+        }
+        td {
+            background-color: #2ec4b6;
+            color: #ffffff;
+        }
+        tr:nth-child(even) td {
+            background-color: #ff8484;
         }
         .button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 1.2em;
-            color: black;
-            background-color: yellow;
+            color: #ffffff;
+            background-color: #8b4513;
             border: none;
             cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
         }
         .button:hover {
-            background-color: orange;
+            background-color: #a0522d;
+        }
+        .form-icon {
+            display: block;
+            width: 50%;
+            height: auto;
+            margin: 20px 0;
+            text-align: center;
+            background-color: #8b4513;
+            color: #ffffff;
+            padding: 30px 20px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .form-icon:hover {
+            background-color: #a0522d;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            .form-icon {
+                padding: 20px 20px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -108,19 +157,14 @@
                 <td>New cost for NGFP</td>
             </tr>
             <tr>
+                <td></td>
                 <td><a href="https://younginnovators.my/">YIC Website</a></td>
                 <td><a href="https://nextgenforesight.org/fellowship/young-voices/">NGFP Website</a></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><a href="https://hyperbyte.ai/naic/">HyperByte AI NAIC</a></td>
+                <td><a href="https://amiso.my/ysc/">AMISO YSC</a></td>
             </tr>
         </table>
-   
-
-   <div>
- <h2>Register Here</h2>
-        <iframe width="640px" height="480px" src="https://forms.office.com/r/AzTVEr1Dr8?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100%">
-    </div>
+        <a href="https://forms.office.com/r/AzTVEr1Dr8?embed=true" class="form-icon">Register Here</a>
     </div>
 </body>
 </html>
