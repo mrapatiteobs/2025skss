@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makerspace Club 2025</title>
+    <style>
+        body {
+            background-color: black;
+            color: yellow;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 3px 3px 5px yellow;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid yellow;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #222;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: black;
+            background-color: yellow;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Makerspace Club 2025</h1>
+        <h2>Competition Details</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>YIC (Young Innovators Challenge)</th>
+                <th>NGFP (Young Voices Awards)</th>
+            </tr>
+            <tr>
+                <td>Criteria</td>
+                <td>13-17 years old, 2-3 students/team</td>
+                <td>13-17 years old, 2-3 students/team</td>
+            </tr>
+            <tr>
+                <td>Challenge</td>
+                <td>"Help a person, change the world" <br> Identify a real problem and give 1 solution</td>
+                <td>Create a positive change in your community <br> Focus on 1 SDG Goal</td>
+            </tr>
+            <tr>
+                <td>Submission</td>
+                <td>Prototype with Arduino <br> Pitching slide</td>
+                <td>Short essay (400 words) <br> Video (2 min 30 sec)</td>
+            </tr>
+            <tr>
+                <td>Due Date</td>
+                <td>31 July 2024 <br> Mentoring will be provided</td>
+                <td>30 June 2024 <br> Workshops will be provided</td>
+            </tr>
+            <tr>
+                <td>Prize</td>
+                <td>Certificate <br> Chance to join state Maker Fair <br> Medals</td>
+                <td>Certificate <br> Cash prize for winners</td>
+            </tr>
+            <tr>
+                <td>Cost</td>
+                <td>Registration: Free <br> Components for Prototype may cost RM30 per group</td>
+                <td>Registration: Free</td>
+            </tr>
+        </table>
+        <a href="#" class="button">Join Now</a>
+    </div>
+</body>
+</html>
