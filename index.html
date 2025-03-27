@@ -6,13 +6,12 @@
     <title>Makerspace Club 2025</title>
     <style>
         body {
-            background-color: #f4f4f9;
-            color: #4e4e4e;
+            background-color: #e8f5e9;
+            color: #333333;
             font-family: 'Helvetica Neue', Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            overflow: hidden;
         }
         .container {
             width: 90%;
@@ -20,14 +19,19 @@
             margin: auto;
             padding: 20px;
             position: relative;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
             font-size: 2.5em;
-            color: #d7b9a3;
+            color: #1b5e20;
+            font-weight: bold;
         }
         h2 {
             font-size: 2em;
-            color: #9fcded;
+            color: #2e7d32;
+            font-weight: bold;
         }
         table {
             width: 100%;
@@ -43,32 +47,18 @@
             padding: 15px;
             text-align: left;
             font-size: 1em;
+            color: #000000;
+            font-weight: bold;
         }
         th {
-            background-color: #ffcc99;
+            background-color: #388e3c;
             color: #ffffff;
         }
         td {
-            background-color: #b3e5cc;
-            color: #ffffff;
+            background-color: #c8e6c9;
         }
         tr:nth-child(even) td {
-            background-color: #ffb3b3;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: #ffffff;
-            background-color: #8b4513;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #a0522d;
+            background-color: #a5d6a7;
         }
         .form-icon {
             display: block;
@@ -76,14 +66,15 @@
             height: auto;
             margin: 20px 0;
             text-align: center;
-            background-color: #ffcc99;
+            background-color: #4caf50;
             color: #ffffff;
             padding: 30px 20px;
             font-size: 1.2em;
             border-radius: 10px;
             text-decoration: none;
             animation: vibrate 3s infinite;
-            box-shadow: 0 0 10px #ffcc99, 0 0 20px #ffcc99, 0 0 30px #ffcc99;
+            box-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
+            font-weight: bold;
         }
         @keyframes vibrate {
             0% { transform: translate(0, 0); }
@@ -97,9 +88,10 @@
             width: 10px;
             height: 10px;
             background-color: #fff;
-            box-shadow: 0 0 10px #ffcc99, 0 0 20px #ffcc99, 0 0 30px #ffcc99;
+            box-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
             border-radius: 50%;
             animation: sparkle 5s linear infinite;
+            z-index: -1;
         }
         @keyframes sparkle {
             0% { transform: translateY(0); opacity: 1; }
