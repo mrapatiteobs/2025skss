@@ -118,19 +118,43 @@
     .ysc-btn:hover {
       box-shadow: 0 0 15px #651fff, 0 0 30px #7c4dff;
     }
-    /* Register Button */
+    /* Spectacular Register Button */
     .register-btn {
       display: block;
       width: max-content;
       margin: 40px auto 0;
       padding: 15px 30px;
-      background: linear-gradient(45deg, #00e676, #00bfa5);
+      background: linear-gradient(45deg, #ff6f00, #ffd54f, #ff6f00);
+      background-size: 200% 200%;
       color: #fff;
       font-size: 1.4em;
       text-decoration: none;
       border-radius: 50px;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: gradientAnimation 3s ease infinite, pulse 2s infinite;
+    }
+    @keyframes gradientAnimation {
+      0% {
+         background-position: 0% 50%;
+      }
+      50% {
+         background-position: 100% 50%;
+      }
+      100% {
+         background-position: 0% 50%;
+      }
+    }
+    @keyframes pulse {
+      0% {
+         box-shadow: 0 0 0 rgba(255, 111, 0, 0.7);
+      }
+      70% {
+         box-shadow: 0 0 20px rgba(255, 111, 0, 0);
+      }
+      100% {
+         box-shadow: 0 0 0 rgba(255, 111, 0, 0);
+      }
     }
     .register-btn:hover {
       transform: translateY(-5px);
