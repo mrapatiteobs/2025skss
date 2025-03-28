@@ -83,17 +83,40 @@
       text-align: center;
       border-top: 1px solid #e0e0e0;
     }
+    /* Custom Button Base */
     .card-footer a {
       text-decoration: none;
       font-weight: bold;
       color: #fff;
-      background-color: #2575fc;
       padding: 10px 20px;
       border-radius: 25px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
     }
-    .card-footer a:hover {
-      background-color: #6a11cb;
+    /* Custom Button Colors & Glow Effects */
+    .yic-btn {
+      background-image: linear-gradient(45deg, #ff6f00, #ff8f00);
+    }
+    .yic-btn:hover {
+      box-shadow: 0 0 15px #ff6f00, 0 0 30px #ff8f00;
+    }
+    .ngfp-btn {
+      background-image: linear-gradient(45deg, #d50000, #ff1744);
+    }
+    .ngfp-btn:hover {
+      box-shadow: 0 0 15px #d50000, 0 0 30px #ff1744;
+    }
+    .naic-btn {
+      background-image: linear-gradient(45deg, #00bfa5, #00e676);
+    }
+    .naic-btn:hover {
+      box-shadow: 0 0 15px #00bfa5, 0 0 30px #00e676;
+    }
+    .ysc-btn {
+      background-image: linear-gradient(45deg, #651fff, #7c4dff);
+    }
+    .ysc-btn:hover {
+      box-shadow: 0 0 15px #651fff, 0 0 30px #7c4dff;
     }
     /* Register Button */
     .register-btn {
@@ -143,7 +166,7 @@
         <p><strong>Cost:</strong> Free (Prototype components: RM30 per group)</p>
       </div>
       <div class="card-footer">
-        <a href="https://younginnovators.my/">Explore YIC</a>
+        <a href="https://younginnovators.my/" class="yic-btn">Explore YIC</a>
       </div>
     </div>
     
@@ -159,7 +182,7 @@
         <p><strong>Cost:</strong> Free</p>
       </div>
       <div class="card-footer">
-        <a href="https://nextgenforesight.org/fellowship/young-voices/">Discover NGFP</a>
+        <a href="https://nextgenforesight.org/fellowship/young-voices/" class="ngfp-btn">Discover NGFP</a>
       </div>
     </div>
     
@@ -183,7 +206,7 @@
         <p><strong>Cost:</strong> Free</p>
       </div>
       <div class="card-footer">
-        <a href="https://hyperbyte.ai/naic/">Learn About NAIC</a>
+        <a href="https://hyperbyte.ai/naic/" class="naic-btn">Learn About NAIC</a>
       </div>
     </div>
     
@@ -199,7 +222,7 @@
         <p><strong>Cost:</strong> Free</p>
       </div>
       <div class="card-footer">
-        <a href="https://amiso.my/ysc/">Check Out YSC</a>
+        <a href="https://amiso.my/ysc/" class="ysc-btn">Check Out YSC</a>
       </div>
     </div>
     
