@@ -1,230 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makerspace Club 2025</title>
-    <style>
-        body {
-            background-color: #e8f5e9;
-            color: #333333;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            position: relative;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #1b5e20;
-        }
-        h2 {
-            font-size: 2em;
-            color: #2e7d32;
-        }
-        table {
-            width: 80%; /* Adjusted to make the table slightly more narrow */
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-left: auto;
-            margin-right: auto;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: left;
-            font-size: 1em;
-            color: #000000;
-        }
-        th {
-            background-color: #388e3c;
-            color: #ffffff;
-        }
-        .col1 {
-            background-color: #e0f2f1;
-        }
-        .col2 {
-            background-color: #c8e6c9;
-        }
-        .col3 {
-            background-color: #a5d6a7;
-        }
-        .col4 {
-            background-color: #81c784;
-        }
-        .col5 {
-            background-color: #66bb6a;
-        }
-        .form-icon {
-            display: block;
-            width: 80%;
-            height: auto;
-            margin: 20px auto;
-            text-align: center;
-            background-color: #4caf50;
-            color: #ffffff;
-            padding: 15px 20px;
-            font-size: 1.2em;
-            border-radius: 20px;
-            text-decoration: none;
-            animation: vibrate 3s infinite;
-            box-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
-            font-weight: normal;
-        }
-        @keyframes vibrate {
-            0% { transform: translate(0, 0); }
-            25% { transform: translate(2px, 2px); }
-            50% { transform: translate(0, 0); }
-            75% { transform: translate(-2px, -2px); }
-            100% { transform: translate(0, 0); }
-        }
-        .sparkle {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #fff;
-            box-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
-            border-radius: 50%;
-            animation: sparkle 5s linear infinite;
-            z-index: -1;
-        }
-        @keyframes sparkle {
-            0% { transform: translateY(0); opacity: 1; }
-            100% { transform: translateY(100vh); opacity: 0; }
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            h2 {
-                font-size: 1.5em;
-            }
-            th, td {
-                padding: 10px;
-                font-size: 0.9em;
-            }
-            .form-icon {
-                padding: 10px 15px;
-                font-size: 1em;
-            }
-            .container {
-                width: 100%;
-                padding: 10px;
-            }
-            table {
-                width: 100%;
-                margin-top: 10px;
-                box-shadow: none;
-            }
-            th, td {
-                font-size: 0.8em;
-                padding: 8px;
-            }
-            .form-icon {
-                width: 90%;
-                padding: 10px;
-                font-size: 1.1em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Makerspace Club 2025 Competitions</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #1b5e20;
+      margin-bottom: 30px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-header {
+      padding: 15px;
+      color: #fff;
+      font-size: 1.5em;
+    }
+    /* Unique header colors for each competition */
+    .yic-header { background: #388e3c; }
+    .ngfp-header { background: #2e7d32; }
+    .naic-header { background: #00796b; }
+    .ysc-header { background: #009688; }
+    .card-content {
+      padding: 15px 20px;
+      text-align: left;
+      line-height: 1.6;
+    }
+    .card-content p {
+      margin: 8px 0;
+    }
+    .card-content strong {
+      color: #1b5e20;
+    }
+    .card-footer {
+      background-color: #f1f8e9;
+      padding: 10px 15px;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+    }
+    .card-footer a {
+      text-decoration: none;
+      color: #1b5e20;
+      font-weight: bold;
+      border: 1px solid #1b5e20;
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .card-footer a:hover {
+      background-color: #1b5e20;
+      color: #fff;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .card-header { font-size: 1.3em; }
+      .card-content { font-size: 0.9em; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Makerspace Club 2025</h1>
-        <h2>Competition Details</h2>
-        <table>
-            <tr>
-                <th>Category</th>
-                <th>YIC (Young Innovators Challenge)</th>
-                <th>NGFP (Young Voices Awards)</th>
-                <th>NAIC (National AI Competition)</th>
-                <th>YSC (Youth STEM Cup)</th>
-            </tr>
-            <tr>
-                <td class="col1">Criteria</td>
-                <td class="col2">13-17 years old, 2-3 students/team</td>
-                <td class="col3">13-17 years old, 2-3 students/team</td>
-                <td class="col4">Team of 4 students. Category A (Form 3/Year 9 – Form 5/Year 11)</td>
-                <td class="col5">Form a group of 4</td>
-            </tr>
-            <tr>
-                <td class="col1">Challenge</td>
-                <td class="col2">"Help a person, change the world" <br> Identify a real problem and give 1 solution</td>
-                <td class="col3">Create a positive change in your community <br> Focus on 1 SDG Goal</td>
-                <td class="col4">
-                    AI Art: Create an A3 size artwork using AI tools.<br>
-                    AI Innovation: Propose AI solutions for real-world problems.<br>
-                    AI Technical: Develop AI models to solve real-world problems.
-                </td>
-                <td class="col5">STEM related Olympiad quiz</td>
-            </tr>
-            <tr>
-                <td class="col1">Submission</td>
-                <td class="col2">Prototype with Arduino <br> Pitching slide</td>
-                <td class="col3">Short essay (400 words) <br> Video (2 min 30 sec)</td>
-                <td class="col4">
-                    AI Art: Final artwork, writeup on theme reflection and creative process (tools, prompts, drafts).<br>
-                    AI Innovation: Writeup on problem, AI solution, social impact, and prototype (app mockup/model images).<br>
-                    AI Technical: Complete codebase with a methodology writeup.
-                </td>
-                <td class="col5">Quiz submission</td>
-            </tr>
-            <tr>
-                <td class="col1">Due Date</td>
-                <td class="col2">31 July 2024 <br> Mentoring provided</td>
-                <td class="col3">30 June 2024 <br> Workshops provided</td>
-                <td class="col4">
-                    Preliminary Round: Online Submission (Deadline: 24 May).<br>
-                    Final Round: Physical presentation at Sunway University (Shortlisted participants).
-                </td>
-                <td class="col5">19th April 2025 (Prelim); 21st June 2025 (Final)</td>
-            </tr>
-            <tr>
-                <td class="col1">Prize</td>
-                <td class="col2">Certificate <br> Chance to join state Maker Fair <br> Medals</td>
-                <td class="col3">Certificate <br> Cash prize for winners</td>
-                <td class="col4">Cash, certificate, visit to Google office, 6 months of premium photo editing</td>
-                <td class="col5">Cash and certificate</td>
-            </tr>
-            <tr>
-                <td class="col1">Cost</td>
-                <td class="col2">Registration: Free <br> Components for Prototype may cost RM30 per group</td>
-                <td class="col3">Registration: Free</td>
-                <td class="col4">Free of charge</td>
-                <td class="col5">Free</td>
-            </tr>
-            <tr>
-                <td class="col1"></td>
-                <td class="col2"><a href="https://younginnovators.my/">YIC Website</a></td>
-                <td class="col3"><a href="https://nextgenforesight.org/fellowship/young-voices/">NGFP Website</a></td>
-                <td class="col4"><a href="https://hyperbyte.ai/naic/">HyperByte AI NAIC</a></td>
-                <td class="col5"><a href="https://amiso.my/ysc/">AMISO YSC</a></td>
-            </tr>
-        </table>
-        <a href="https://forms.office.com/r/AzTVEr1Dr8?embed=true" class="form-icon">Register Here</a>
-        <div class="sparkle" style="top: 10%; left: 10%;"></div>
-        <div class="sparkle" style="top: 20%; left: 50%;"></div>
-        <div class="sparkle" style="top: 30%; left: 30%;"></div>
-        <div class="sparkle" style="top: 40%; left: 70%;"></div>
-        <div class="sparkle" style="top: 50%; left: 20%;"></div>
-        <div class="sparkle" style="top: 60%; left: 80%;"></div>
-        <div class="sparkle" style="top: 70%; left: 40%;"></div>
-        <div class="sparkle" style="top: 80%; left: 60%;"></div>
-        <div class="sparkle" style="top: 90%; left: 90%;"></div>
-        <div class="sparkle" style="top: 100%; left: 30%;"></div>
+  <h1>Makerspace Club 2025 Competitions</h1>
+  <div class="grid-container">
+    
+    <!-- Young Innovators Challenge (YIC) Card -->
+    <div class="card">
+      <div class="card-header yic-header">
+        YIC (Young Innovators Challenge)
+      </div>
+      <div class="card-content">
+        <p><strong>Criteria:</strong> 13-17 years old, 2-3 students per team</p>
+        <p><strong>Challenge:</strong> "Help a person, change the world" – Identify a real problem and propose 1 solution.</p>
+        <p><strong>Submission:</strong> Prototype with Arduino &amp; Pitching slide</p>
+        <p><strong>Due Date:</strong> 31 July 2024 (Mentoring provided)</p>
+        <p><strong>Prize:</strong> Certificate, chance to join state Maker Fair, Medals</p>
+        <p><strong>Cost:</strong> Registration is free; prototype components may cost RM30 per group</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://younginnovators.my/">Visit YIC Website</a>
+      </div>
     </div>
+    
+    <!-- NGFP (Young Voices Awards) Card -->
+    <div class="card">
+      <div class="card-header ngfp-header">
+        NGFP (Young Voices Awards)
+      </div>
+      <div class="card-content">
+        <p><strong>Criteria:</strong> 13-17 years old, 2-3 students per team</p>
+        <p><strong>Challenge:</strong> Create a positive change in your community – Focus on 1 SDG Goal</p>
+        <p><strong>Submission:</strong> Short essay (400 words) &amp; Video (2 min 30 sec)</p>
+        <p><strong>Due Date:</strong> 30 June 2024 (Workshops provided)</p>
+        <p><strong>Prize:</strong> Certificate and cash prize for winners</p>
+        <p><strong>Cost:</strong> Registration is free</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://nextgenforesight.org/fellowship/young-voices/">Visit NGFP Website</a>
+      </div>
+    </div>
+    
+    <!-- National AI Competition (NAIC) Card -->
+    <div class="card">
+      <div class="card-header naic-header">
+        NAIC (National AI Competition)
+      </div>
+      <div class="card-content">
+        <p><strong>Criteria:</strong> Team of 4 students (Category A: Form 3/Year 9 – Form 5/Year 11)</p>
+        <p><strong>Challenge:</strong>
+          <em>AI Art:</em> Create an A3 size artwork using AI tools.<br>
+          <em>AI Innovation:</em> Propose AI solutions for real-world problems.<br>
+          <em>AI Technical:</em> Develop AI models with hands-on coding to solve real-world challenges.
+        </p>
+        <p><strong>Submission:</strong>
+          <em>AI Art:</em> Final artwork plus a writeup on theme reflection and creative process.<br>
+          <em>AI Innovation:</em> Writeup on the problem, AI solution, social impact, and a prototype (app mockup/model images).<br>
+          <em>AI Technical:</em> Complete codebase with a methodology writeup.
+        </p>
+        <p><strong>Due Date:</strong> Preliminary (Online Submission) – Deadline: 24 May; Final Round – Physical presentation at Sunway University for shortlisted participants</p>
+        <p><strong>Prize:</strong> Cash, certificate, visit to Google office, and 6 months of premium photo editing</p>
+        <p><strong>Cost:</strong> Free of charge</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://hyperbyte.ai/naic/">Visit NAIC Website</a>
+      </div>
+    </div>
+    
+    <!-- Youth STEM Cup (YSC) Card -->
+    <div class="card">
+      <div class="card-header ysc-header">
+        YSC (Youth STEM Cup)
+      </div>
+      <div class="card-content">
+        <p><strong>Criteria:</strong> Form a group of 4</p>
+        <p><strong>Challenge:</strong> STEM-related Olympiad quiz</p>
+        <p><strong>Submission:</strong> Quiz submission</p>
+        <p><strong>Due Date:</strong> 19th April 2025 (Preliminary); 21st June 2025 (Final)</p>
+        <p><strong>Prize:</strong> Cash and certificate</p>
+        <p><strong>Cost:</strong> Free</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://amiso.my/ysc/">Visit YSC Website</a>
+      </div>
+    </div>
+    
+  </div>
+  <div style="text-align:center; margin-top:30px;">
+    <a href="https://forms.office.com/r/AzTVEr1Dr8?embed=true" style="text-decoration:none; padding: 12px 20px; background-color: #4caf50; color: #fff; border-radius: 30px; font-size: 1.2em;">Register Here</a>
+  </div>
 </body>
 </html>
